@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce API Name Formatter Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;  /* Dark background */
+      color: #f1f1f1;  /* Light text */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;  /* Move content higher */
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #f1f1f1;
+      font-size: 24px;
+      text-align: center;
+      width: 100%;  /* Use full width of container */
+      max-width: 600px;  /* Set a wider maximum width for the header */
+      white-space: nowrap;  /* Prevent wrapping */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;  /* Revert to the narrower container width */
+    }
+
+    .setting-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #f1f1f1;
+      width: 180px;
+    }
+
+    input {
+      width: 50px;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333333;  /* Dark input background */
+      color: #f1f1f1;  /* Light text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      margin-right: 10px;
+    }
+
+    ul.shortcut-box {
+      display: flex;
+      gap: 5px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: flex-start;  /* Ensure alignment to the left */
+      min-width: 150px;  /* Set a consistent minimum width */
+    }
+
+    .shortcut-box li {
+      display: inline-block;
+      padding: 6px 10px;
+      background-color: #333333;
+      color: #f1f1f1;
+      border-radius: 5px;
+      font-size: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    button {
+      width: 200px;
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 25px;
+      background-color: #007bff;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+      align-self: center;  /* Ensure the button is always centered */
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:active {
+      background-color: #00408f;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #savedMessage {
+      display: none;
+      margin-top: 10px;
+      color: #4CAF50;  /* Green for saved message */
+      font-size: 14px;
+    }
+
+    #shortcutLink {
+      font-size: 12px;
+      margin-top: 20px;
+      color: #f1f1f1;
+      text-align: center;
+    }
+
+    #shortcutLink a {
+      color: #4CAF50;  /* Green for link */
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #shortcutLink a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Salesforce API Name Formatter Settings</h2>  <!-- Keep on one line with wider header -->
+
+  <div class="container">
+    <!-- Macro 1 Setting Group -->
+    <div class="setting-group">
+      <label for="replacementChar1">Macro 1 Replacement:</label>
+      <input type="text" id="replacementChar1" maxlength="1" />
+      <ul class="shortcut-box" id="shortcut1"></ul>  <!-- Placeholder for Shortcut 1 -->
+    </div>
+
+    <!-- Macro 2 Setting Group -->
+    <div class="setting-group">
+      <label for="replacementChar2">Macro 2 Replacement:</label>
+      <input type="text" id="replacementChar2" maxlength="1" />
+      <ul class="shortcut-box" id="shortcut2"></ul>  <!-- Placeholder for Shortcut 2 -->
+    </div>
+
+    <!-- Save Button -->
+    <button id="saveButton">Save</button>
+    <span id="savedMessage">Saved!</span>  <!-- Subtle saved message -->
+
+    <!-- Link to shortcuts page -->
+    <div id="shortcutLink">
+      Change keyboard shortcuts on your <a id="openShortcuts">browser's extensions page</a>.
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+
+</body>
+</html>
