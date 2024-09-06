@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/675a11cc-ec54-4d3f-817f-f5ebfd745415" alt="Logo" width="40" align="left" /> Salesforce API Name Formatter
+# <img src="Salesforce API Name Formatter/icon-48.png" alt="Logo" width="40" align="left" /> Salesforce API Name Formatter
 
 ![License](https://img.shields.io/github/license/RebbePod/salesforceapiformatter)
 ![Version](https://img.shields.io/badge/version-1.0-blue)
