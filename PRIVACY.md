@@ -2,8 +2,6 @@
 
 The Salesforce API Name Formatter browser extension/plugin communicates directly between the user's web browser. No data is sent to other parties and no data is kept.
 
-All Salesforce API calls from the Inspector re-uses the access token/session used by the browser to access Salesforce. To acquire this access token the Salesforce Inspector requires permission to read browser cookie information for Salesforce domains.
-
 To validate the accuracy of this description, inspect the source code.
 
 
