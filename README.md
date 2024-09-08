@@ -15,6 +15,10 @@
 
 ## Installation
 
+https://chromewebstore.google.com/detail/salesforce-api-name-forma/ediecjlikhchfhonkigdfahkkboemmbp
+
+### Running the Extension Locally
+
 1. Clone the repository or download the zip file:
     ```bash
     git clone https://github.com/RebbePod/salesforce-api-name-formatter.git
@@ -56,8 +60,6 @@ Contributions are welcome! To get started with local development:
     git push origin feature-branch
     ```
 6. Open a pull request.
-
-### Running the Extension Locally
 
 To test your changes locally:
 
