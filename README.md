@@ -94,3 +94,5 @@ For questions or support, please reach out to us at [Your Email Address].
 
 We welcome contributions of all kinds! Whether it’s reporting bugs, suggesting features, or submitting pull requests, your help is appreciated.
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=4SUBTZ2KBZKML) - or - [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/rebbepod)
+
